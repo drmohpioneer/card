@@ -141,6 +141,7 @@ body.ready .card,body.ready .card *{animation-play-state:running!important}
 .actions .btn:nth-child(5){animation-delay:.52s}
 .actions .btn:nth-child(6){animation-delay:.57s}
 .actions .btn:nth-child(7){animation-delay:.62s}
+.actions .btn:nth-child(8){animation-delay:.67s}
 .hint{margin-top:6px;font-family:Cairo,var(--sys);font-weight:900;font-size:11px;color:rgba(148,163,184,.7);
   animation:rise .6s .6s both}
 .foot{margin-top:4px;font-family:var(--sys);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
@@ -199,6 +200,9 @@ body.ready .card,body.ready .card *{animation-play-state:running!important}
     <a class="btn primary" href="https://bedaya-iers.onrender.com" target="_blank" rel="noopener">
       <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.3-9.3-8.6A5 5 0 0 1 12 6a5 5 0 0 1 9.3 6.4C19 16.7 12 21 12 21z"/><path d="M3.5 12h4l1.5-3 2.5 6 1.7-4 1 2h4.3"/></svg></span>
       <span class="btxt"><b>Bedaya — my AI coach</b><i>اسأل الذكاء الاصطناعي اللي بنيته — مجانًا</i></span><span class="chev">›</span></a>
+    <a class="btn" href="https://drmohpioneer.github.io/justdrmoh/" target="_blank" rel="noopener">
+      <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M2 13h20"/></svg></span>
+      <span class="btxt"><b>Portfolio</b><i>شوف شغلي في الـ AI</i></span><span class="chev">›</span></a>
     <a class="btn" id="save" href="#" download="Dr-Mohamed-Mostafa.vcf">
       <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg></span>
       <span class="btxt"><b>Save contact</b><i>حفظ جهة الاتصال</i></span><span class="chev">↓</span></a>
@@ -247,7 +251,7 @@ function vcf(){
   L.push("URL:"+LINK);              /* reopen the card any time from the contact */
   L.push("URL:https://www.linkedin.com/in/dr-mohamed-mostafa");
   L.push("URL:https://www.youtube.com/@just.dr.mohamed");
-  L.push("NOTE:just.dr.moh · TikTok @just.dr.moh · Bedaya (free AI coach) https://bedaya-iers.onrender.com");
+  L.push("NOTE:just.dr.moh · TikTok @just.dr.moh · Portfolio https://drmohpioneer.github.io/justdrmoh/ · Bedaya (free AI coach) https://bedaya-iers.onrender.com");
   L.push("END:VCARD");
   return L.join("\r\n")+"\r\n";
 }
